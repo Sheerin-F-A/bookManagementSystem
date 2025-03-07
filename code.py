@@ -104,9 +104,9 @@ class EbookManagement:
         if ebook in self.books:
             self.lend_list.append(ebook)
             self.books.remove(ebook)
-            messagebox.showinfo("Success", "E-book issued successfully")
+            messagebox.showinfo("Success", "E-Book issued successfully")
         else:
-            messagebox.showerror("Error", "E-book not found")
+            messagebox.showerror("Error", "E-Book not found")
         self.issue_book_entry.delete(0, tk.END)
 
     def view_books(self):
